@@ -1,0 +1,29 @@
+@mixin sans($size: $fontSize, $font: Fira Sans ) {
+	font-family: $font;
+	font-size: $size;
+}
+@mixin serif($size: $fontSize, $font: PT Serif, $style: italic ) {
+	font-family: $font;
+	font-size: $size;
+	font-style: $style;
+}
+
+@mixin circle($diameter: 10px, $color: null) {
+	width: $diameter;
+	height: $diameter;
+	border-radius: 50%;
+	background-color: $color;
+}
+@mixin absolute($top: null, $bottom: null) {
+		position: absolute;
+		top: $top;
+		bottom: $bottom;
+		left: 0;
+		right: 0;
+		margin: auto;
+}
+@mixin separator($height: 1px, $color: $colorMiddle) {
+	border: 0;
+    height: $height;
+    background: $color;
+}

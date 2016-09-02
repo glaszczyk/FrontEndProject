@@ -1,0 +1,179 @@
+* {
+	@extend %reset;
+}
+
+// .single-question is wrapper for one question with title etc.
+// __elements are used for sizing and positioning
+.questions-main {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fbfbfb;
+	&__container {
+		width: 798px;
+		margin: 0 auto;
+		padding-bottom: 41px;
+		border-bottom: 1px solid $colorMiddle;
+		background-color: #fff;
+		box-shadow: 0 0 10px 0 lighten($colorMiddle, 30%);
+	}
+}
+
+.single-question {
+	&__title-bar {
+		height: 92px;
+		width: 594px;
+		background-color: lighten($colorPrimary, 60%);
+	}
+	&__bottom-bar {
+		width: 798px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__status {
+		width: 90px;
+		height: 187px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		background-color: lighten($colorPrimary, 60%);
+	}
+	&__activity {
+		width: 90px;
+		height: 154px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	&__profile {
+		width: 90px;
+		height: 154px;
+		display: flex;
+		justify-content: center;
+		background-color: $colorLight;
+		position: relative;
+	}
+	&__info-panel {
+		width: 192px;
+		height: 154px;
+		padding: 10px 10px 10px 42px;
+	}
+}
+
+// classes for each element within .single-question
+.title-bar {
+	display: flex;
+	&__photo {
+		@include circle(50px, $colorMiddle);
+		margin: 21px 0 0 20px;
+	}
+	&__title-container {
+		margin: 21px 0 0 38px;
+	}
+	&__author {
+		@include sans(12px);
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		color: $colorMiddle;
+	}
+	&__author-name {
+		font-size: 18px;
+		text-transform: none;
+		color: $colorPrimary;
+	}
+	&__title {
+		@include serif(18px);
+		color: $colorPrimary;
+	}
+}
+.status {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	&__separator {
+		width: 70px;
+		@include separator();
+	}
+	&__info {
+		@include sans(11px);
+		padding-top: 10px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $colorMiddle;
+		margin-bottom: 11px;
+		align-self: center;
+	}
+}
+.activity {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	&__number {
+		@include sans(14px);
+		align-self: center;
+	}
+	&__more {
+		@include serif(14px);
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 15px;
+	}
+	&__dot {
+		@include absolute($bottom: -5px);
+		@include circle(10px, $colorMiddle);
+	}
+}
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	&__photo {
+		@include circle(50px, $colorMiddle);
+		align-self: center;
+	}
+	&__separator,
+	&__separator--highlight {
+		margin-top: 47px;
+		margin-bottom: 10px;
+		width: 70px;
+	}
+	&__separator {
+		@include separator(1px, $colorMiddle);
+		&--highlight {
+			@include separator(1px, $colorDark);
+		}
+	}
+	&__status {
+		@include sans(11px);
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $colorMiddle;
+		margin-bottom: 11px;
+		text-align: center;
+	}
+	&__dot,
+	&__dot--highlight {
+		@include absolute($bottom: -5px);
+	}
+	&__dot {
+		@include circle(10px, $colorMiddle);
+		&--highlight {
+			@include circle(10px, $colorDark);
+		}
+	}
+}
+
+.info-panel {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&__description {
+		@include serif(13px);	
+	}
+	&__number {
+		@include sans(15px);
+		font-style: normal;
+	}
+}
