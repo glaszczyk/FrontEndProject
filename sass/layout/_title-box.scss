@@ -1,0 +1,75 @@
+// title box
+.title-box {
+	display: flex;
+	justify-content: space-between;
+	// box with photo
+	&__photo-box,
+	&__photo-box--answer {
+		width: 90px;
+	}
+	&__photo-box--answer {
+		border-right: 1px solid $colorLight;
+	}
+	&__photo {
+		@include circle(50px, $colorMiddle);
+		margin: 21px 0 0 20px;
+	}
+	// box with author and title
+	&__title-container,
+	&__answer-container,
+	&__answer-container--button {
+		width: 100%;
+		margin: 15px -190px 0 -90px;
+		padding: 0 190px 0 111px;
+	}
+	&__answer-container {
+		padding-bottom: 23px;
+	}
+	&__answer-container--button {
+		padding-bottom: 38px;
+	}
+	&__author {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		color: $colorMiddle;
+	}
+	&__author-name {
+		font-size: 18px;
+		text-transform: none;
+		color: $colorPrimary;
+	}
+	&__day {
+		@include serif(12px);
+		text-transform: none;
+		color: $colorDark;
+	}
+	&__title {
+		@include serif(18px);
+		color: $colorPrimary;
+		margin-top: 9px;
+	}
+	&__answer {
+		color: $colorDark;
+		margin-top: 9px;
+		width: 100%;
+		font-size: 13px;
+		line-height: 1.6;
+		padding-right: 21px;
+	}
+	// box with follow / unfollow action
+	&__action {
+		display: flex;
+		justify-content: center;
+		line-height: 92px;
+		width: 190px;
+	}
+	&__follow {
+		color: $colorPrimary;
+		font-size: 14px;
+	}
+	&__upvotes {
+		width: 190px;
+		margin-top: 12px;
+	}
+}

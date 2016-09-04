@@ -1,5 +1,12 @@
-@import "./modules/_variables.scss";
-@import "./modules/_mixins.scss";
+@import "./modules/_variables.scss";		//variables for all pages
+@import "./modules/_mixins.scss";			//mixins used
 @import "./modules/_extends.scss";
-@import "./layout/_questions.scss";
 @import "./layout/_profile.scss";
+@import "./layout/_question-view.scss";
+@import "./layout/_upvotes.scss";
+@import "./layout/_title-box.scss";
+@import "./layout/_question-template.scss";
+@import "./layout/_answer.scss";
+@import "./layout/_single-question.scss";
+@import "./layout/_questions.scss";
+@import "./layout/_user-profile.scss";

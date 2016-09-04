@@ -20,7 +20,7 @@ gulp.task("default", ["sass"], function(){
 	browserSync.init({
 		server: {
 			baseDir: "./",
-			index: "profile.html"
+			index: "question_view.html"
 		}
 	});
 

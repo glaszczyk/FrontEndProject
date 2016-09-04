@@ -1,0 +1,26 @@
+// Upvotes part
+.upvotes {
+	display: flex;
+	align-items: center;
+	&__count {
+		width: 124px;
+		padding-left: 34px;
+	}
+	&__text {
+		@include serif(14px);
+	}
+	&__number {
+		font-style: normal;
+	}
+	&__arrows {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 40px;
+		margin-left: 10px;
+	}
+	&__single-arrow {
+		font-size: 18px;
+		color: $colorPrimary;
+	}
+}

@@ -1,0 +1,71 @@
+// .single-question is wrapper for one question with title etc.
+// __elements are used for sizing and positioning
+.question-view {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fbfbfb;
+	&__container,
+	&__container--noline {
+		width: 798px;
+		margin: 0 auto;
+		// padding-bottom: 41px;
+	}
+	&__container {
+		border-bottom: 1px solid $colorMiddle;
+	}
+	&__element-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__question-template,
+	&__answer-1st-level,
+	&__answer-2st-level {
+		background-color: #fff;
+		box-shadow: 0 -3px 10px 0 lighten($colorMiddle, 30%);
+	}
+	&__answer-1st-level {
+		z-index: 10;
+	}
+	&__answer-2st-level {
+		align-self: flex-end;
+		width: 798px-90px;
+		z-index: 0;
+	}
+	&__activity-button {
+		position: absolute;
+		bottom: -15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 177px;
+		height: 31px;
+		border: solid 1px lighten($colorMiddle, 20%);
+		background-color: #fff;
+		z-index: 20;
+	}
+	&__button-text {
+		color: $colorDark;
+	}
+	&__caps {
+		text-transform: uppercase;
+	}
+	&__separator-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		height: 95px;
+		margin-bottom: 21px;
+	}
+	&__separator-text {
+		@include serif(14px);
+	}
+	&__separator-number {
+		font-style: normal;
+	}
+	&__separator {
+		height: 35px;
+	}
+}

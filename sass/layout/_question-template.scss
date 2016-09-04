@@ -1,0 +1,135 @@
+.question-template {
+	&__title-box {
+		min-height: 92px;
+		width: 798px;
+		background-color: lighten($colorPrimary, 60%);
+	}
+	&__content-box {
+		width: 798px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}
+
+// classes for each element within .single-question
+
+.content-box {
+	display: flex;
+	&__empty,
+	&__empty--color {
+		width: 90px;
+		height: 155px;
+	}
+	&__empty--color {
+		background-color: lighten($colorPrimary, 60%);
+	}
+	&__text-container {
+		width: 100%;
+		margin: 21px -190px 0 -90px;
+		padding: 0 190px 0 111px;		
+	}
+	&__question {
+		width: 100%;
+		font-size: 13px;
+		line-height: 1.6;
+		padding-right: 21px;
+	}
+	&__upvotes {
+		width: 190px;
+		margin-top: 12px;
+	}
+}
+
+
+// .status {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: flex-end;
+// 	&__separator {
+// 		width: 70px;
+// 		@include separator();
+// 	}
+// 	&__info {
+// 		@include sans(11px);
+// 		padding-top: 10px;
+// 		font-weight: 400;
+// 		text-transform: uppercase;
+// 		color: $colorMiddle;
+// 		margin-bottom: 11px;
+// 		align-self: center;
+// 	}
+// }
+// .activity {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: flex-end;
+// 	&__number {
+// 		@include sans(14px);
+// 		align-self: center;
+// 	}
+// 	&__more {
+// 		@include serif(14px);
+// 		text-align: center;
+// 		margin-top: 45px;
+// 		margin-bottom: 15px;
+// 	}
+// 	&__dot {
+// 		@include absolute($bottom: -5px);
+// 		@include circle(10px, $colorMiddle);
+// 	}
+// }
+// .profile {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: flex-end;
+// 	&__photo {
+// 		@include circle(50px, $colorMiddle);
+// 		align-self: center;
+// 	}
+// 	&__separator,
+// 	&__separator--highlight {
+// 		margin-top: 47px;
+// 		margin-bottom: 10px;
+// 		width: 70px;
+// 	}
+// 	&__separator {
+// 		@include separator(1px, $colorMiddle);
+// 		&--highlight {
+// 			@include separator(1px, $colorDark);
+// 		}
+// 	}
+// 	&__status {
+// 		@include sans(11px);
+// 		font-weight: 400;
+// 		text-transform: uppercase;
+// 		color: $colorMiddle;
+// 		margin-bottom: 11px;
+// 		text-align: center;
+// 	}
+// 	&__dot,
+// 	&__dot--highlight {
+// 		@include absolute($bottom: -5px);
+// 	}
+// 	&__dot {
+// 		@include circle(10px, $colorMiddle);
+// 		&--highlight {
+// 			@include circle(10px, $colorDark);
+// 		}
+// 	}
+// }
+
+// .info-panel {
+// 	height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// 	&__description {
+// 		@include serif(13px);	
+// 	}
+// 	&__number {
+// 		@include sans(15px);
+// 		font-style: normal;
+// 	}
+// }
