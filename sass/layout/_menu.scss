@@ -1,0 +1,64 @@
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	&__left-group {
+		width: 203px;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+	&__questions-word {
+		text-transform: uppercase;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	&__plus-sign {
+		padding-left: 25px;
+		font-size: 30px;
+		color: $colorPrimary;
+	}
+	&__right-group {
+		width: 798px-203;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__shelf {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__radio {
+		margin-left: 30px;
+		margin-right: 9px;
+	}
+	&__label {
+		font-size: 14px;
+	}
+	&__sort-status {
+	}
+	&__sort-text {
+		@include serif(14px);
+		width: 203px;
+		text-align: right;
+	}
+	&__status-text {
+		@include serif(14px);
+	}
+	&__recent {
+		font-size: 13px;
+		color: $colorMiddle;
+		text-decoration: underline;
+		font-style: normal;
+	}
+	&__hot {
+		font-size: 13px;
+		color: $colorPrimary;
+		font-style: normal;
+	}
+	&__number {
+		font-style: normal;
+		margin-left: 12px;	
+		margin-right: 12px;
+	}
+}

@@ -1,6 +1,8 @@
 @import "./modules/_variables.scss";		//variables for all pages
 @import "./modules/_mixins.scss";			//mixins used
 @import "./modules/_extends.scss";
+@import "./layout/_page.scss";
+@import "./layout/_menu.scss";
 @import "./layout/_profile.scss";
 @import "./layout/_question-view.scss";
 @import "./layout/_upvotes.scss";

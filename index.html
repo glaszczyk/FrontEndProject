@@ -5,9 +5,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Front-end test project</title>
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500|PT+Serif:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
+<body class="page">
+	<!-- menu bar start -->
+	<div class="page__screen">
+		<header class="page__menu-bar">
+			<div class="page__menu-container">
+				<div class="page__back-button-container">
+					<div class="page__back-button">
+						<i class="page__back-arrow ion-ios-arrow-left" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="page__menu">
+					<nav class="menu">
+						<div class="menu__left-group">
+							<p class="menu__questions-word">Questions<i class="menu__plus-sign ion-ios-plus" aria-hidden="true"></i></p>
+						</div>
+						<div class="menu__right-group">
+							<div class="menu__shelf">
+								<form action="">
+	  								<input class="menu__radio" type="radio" name="shelf" id="shelf" value="myshelf" checked="">
+									<label class="menu__label"  for="shelf"> My shelf</label>
+									<input class="menu__radio" type="radio" name="shelf" id="all" value="allquestions">
+	  								<label class="menu__label" for="all"> All questions</label>
+								</form>
+							</div>
+							<div class="menu__sort-status">
+								<p class="menu__sort-text">Sort by: <span class="menu__recent">recent</span> or <span class="menu__hot">hot</span></p>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="page__search">
+				<div class="page__search-field">Search questions</div>
+				<button class="page__search-button"> Search</button>
+			</div>
+		</header>
+	</div>
+	<!-- menu bar end -->
+
 	<div class="questions-main">
 		<div class="questions-main__container">
 
